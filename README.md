@@ -1,35 +1,35 @@
-# Banking System API - ASP.NET Core
+# Banking System API — ASP.NET Core
 
-A back-end banking system developed in C# and ASP.real-world banking operations.
-real-world banking operations. It was developed to learn about
-design and OOP techniques in a real world scenario.
+A backend banking system built with C# and ASP.NET Core Web API that simulates
+real-world banking operations. This project was built to practice layered
+architecture and OOP principles in a realistic context.
 
 ---
 
 ## What This Project Does
 
-This API provides the basic functions of a bank:
+This API handles the core operations you'd expect from a banking backend:
 
 - Open new bank accounts
 - Deposit and withdraw money
 - Transfer funds between accounts
 - Track transaction history
-- Gracefully handle invalid operations with error messages
+- Handle invalid operations gracefully with proper error responses
 
 ---
 
 ## Why I Built It This Way
 
-I wanted more than just a solution - I wanted a solution that looked like a production system
-production system. So I've organised the project in a layered way:
+I didn't just want something that works — I wanted it structured like a real
+production system. So the project follows a strict layered architecture:
 
-- Controllers deal with the HTTP requests
-- Services are responsible for the business logic
-- Repositories access the database, separating data access
-- DTOs keep the API from the models
-- Custom Exceptions for helpful error messages, rather than crashes
+- **Controllers** handle incoming HTTP requests and route them
+- **Services** contain all the business logic
+- **Repositories** talk to the database, keeping data access isolated
+- **DTOs** separate what the API exposes from internal models
+- **Custom Exceptions** give meaningful error messages instead of generic crashes
 
-This allows better maintainability, testability and extensibility.
+This separation makes the codebase easier to maintain, test, and extend.
 
 ---
 
