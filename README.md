@@ -46,3 +46,69 @@ This separation makes the codebase easier to maintain, test, and extend.
 ---
 
 ## Project Structure
+BankingSystemAPI/
+│
+├── Controllers/        → HTTP request handling
+├── Services/           → Business logic
+├── Repositories/       → Database queries
+├── Models/             → Account, Transaction entities
+├── DTOs/               → Request/response shapes
+├── Exceptions/         → Custom exception classes
+└── Data/               → DB connection and raw queries
+
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/accounts/create` | Create a new account |
+| POST | `/api/accounts/deposit` | Deposit money |
+| POST | `/api/accounts/withdraw` | Withdraw money |
+| POST | `/api/accounts/transfer` | Transfer between accounts |
+
+---
+
+## Getting Started
+
+**1. Clone the repo**
+```bash
+git clone https://github.com/your-username/banking-system-api.git
+```
+
+**2. Open in Visual Studio**
+
+Open the `.sln` file and restore NuGet packages.
+
+**3. Set up the database**
+
+Update the connection string in `appsettings.json` to point to your SQL Server
+instance.
+
+**4. Run**
+
+Press `F5` in Visual Studio or use the CLI:
+```bash
+dotnet run
+```
+
+Then open Postman and hit the endpoints listed above.
+
+---
+
+## What's Next
+
+A few things I plan to add:
+
+- [ ] JWT authentication and protected routes
+- [ ] Migrate from ADO.NET to Entity Framework Core
+- [ ] Structured logging
+- [ ] Frontend client in React or Angular
+- [ ] Cloud deployment on Azure or AWS
+
+---
+
+## About
+
+Built by **Sanan Malik** — CS student focusing on backend development.
+This project is for learning purposes.
