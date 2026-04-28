@@ -1,5 +1,5 @@
 using BankApi.Domain.Interfaces;
-using BankApi.Repositories;
+using BankApi.Infrastructure.Repositories;
 using BankApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -4,7 +4,7 @@ using BankApi.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace BankApi.Repositories
+namespace BankApi.Infrastructure.Repositories
 {
  
     public class BankRepository : IAccountRepository
